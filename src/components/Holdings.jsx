@@ -9,7 +9,7 @@ function Holdings() {
 
   useEffect(()=>{
     axios
-      .get("http://localhost:5000/api/client/allHoldings", {
+      .get("https://zerodha-backend-1-lr1u.onrender.com/api/client/allHoldings", {
         withCredentials: true,
       })
       .then((res) => {
