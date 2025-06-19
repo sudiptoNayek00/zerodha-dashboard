@@ -31,11 +31,11 @@ function Menu() {
   const handleLogout = async () => {
     try {
       await axios.post(
-        "http://localhost:5000/api/client/logout",
+        "https://zerodha-backend-1-lr1u.onrender.com/api/client/logout",
         {},
         { withCredentials: true }
       );
-      window.location.replace("http://localhost:5173/signin");
+      window.location.replace("zerodha-app-omega.vercel.app/signin");
     } catch (error) {
       console.error("Logout failed:", error);
     }
