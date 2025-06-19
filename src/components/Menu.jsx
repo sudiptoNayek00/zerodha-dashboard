@@ -17,7 +17,7 @@ function Menu() {
 
     useEffect(() => {
       axios
-        .get("http://localhost:5000/api/client/profile", {
+        .get("https://zerodha-backend-1-lr1u.onrender.com/api/client/profile", {
           withCredentials: true,
         })
         .then((res) => setUser(res.data))
